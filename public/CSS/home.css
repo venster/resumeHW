@@ -1,0 +1,148 @@
+
+@font-face {
+    font-family: 'nameFont'; /*a name to be used later*/
+    src: url('../alex-brush/AlexBrush-Regular.ttf'); /*URL to font*/
+}
+
+/* ============================================================
+  PRIMARY STRUCTURE
+============================================================ */
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+.navbar{
+  margin-bottom: 0px;
+}
+
+/* ============================================================
+  SECTIONS
+============================================================ */
+section.module:last-child {
+  margin-bottom: 0;
+}
+section.module.foot {
+  background-color: black;
+  /*margin-top: auto;
+  margin-bottom: auto;*/
+
+}
+.containerf {
+  margin: 0 auto;
+ /* width: 128px;*/
+
+  
+}
+section.module.foot img{
+  margin-right: 10px;
+  margin-bottom: 15px;
+
+}
+
+section.module h2 {
+  /*margin-bottom: 40px;*/
+  /*font-family: "Roboto Slab", serif;*/
+  font-size: 30px;
+  font-weight: 200;
+}
+/*section.module p {
+  margin-bottom: 40px;
+  font-size: 16px;
+  font-weight: 300;
+}*/
+section.module p:last-child {
+  margin-bottom: 0;
+}
+section.module.content {
+  padding: 40px 0;
+}
+section.module.parallax {
+  height: 400px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+section.module.parallax h2 {
+  color: rgba(255, 255, 255, 1);
+  font-size: 45px;
+  text-align: center;
+  line-height: 10px;
+}
+.introblock{
+ /* border: red solid 10px; */
+  background-color: rgba(0, 0, 0, .6);
+  margin: auto ;
+  margin-top: 150px;
+  padding: 30px;
+  width: 350px;
+
+}
+.introblock {
+  color:white;
+  text-align: center;
+}
+.name{
+    font-family: 'nameFont';
+    font-size: 50px;
+
+}
+
+.titleblock{
+  background-color: rgba(0, 0, 0, .6);
+  margin: auto ;
+  margin-top: 70px;
+  padding: 30px;
+  width: 350px;
+  color:white;
+  text-align: center;
+
+}
+
+
+
+section.module.parallax-1 {
+  background-image: url("../images/bg1.jpg");
+}
+section.module.parallax-2 {
+  height: 280px;
+  background-image: url("../images/bg3.jpg");
+}
+section.module.parallax-3 {
+  height: 280px;
+  background-image: url("../images/bg4.jpg");
+}
+
+@media all and (min-width: 600px) {
+  section.module h2 {
+    font-size: 42px;
+  }
+  section.module p {
+    font-size: 20px;
+  }
+  section.module.parallax h1 {
+    font-size: 96px;
+  }
+}
+@media all and (min-width: 960px) {
+  section.module.parallax h1 {
+    font-size: 160px;
+  }
+}
+
+/* ============================================================
+ BLOCKS
+============================================================ */
+
+.block{
+  margin-bottom: 10px;
+  padding:5px;
+
+  /*border: black solid 1px;*/
+}
+
+.center{
+  text-align: center;
+  margin: auto;
+  
+}

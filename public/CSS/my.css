@@ -1,0 +1,146 @@
+/*.slide-over{
+background: rgba(10, 255, 255, 0.5);
+}*/
+
+
+.tile-label-bg {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 7px;
+  z-index: 999;
+  visibility: hidden;
+}
+.tile-content:hover  .tile-label-bg{
+    visibility: visible;
+} 
+
+.texttext{
+	
+	position: absolute;
+	bottom: 0;
+}
+
+
+.testing{
+    position: absolute;
+    top: -10px;
+    right: 0;   
+}
+
+.tile-square-y{
+    height: 310px;
+}
+
+.col-centered {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:left;
+    /* inline-block space fix */
+    margin-right:-4px;
+}
+.row-centered {
+    text-align:center;
+}
+.container{
+	padding:.5em;
+}
+
+#demo
+{
+background:url(http://24.media.tumblr.com/tumblr_lfk5hbuOf61qe442eo1_400.jpg) no-repeat center center;
+height:inherit;
+width:50%;
+}
+
+
+.info_table{
+    padding: 5px;
+    display: table;
+}
+
+.text_table{
+    vertical-align: middle; 
+    width:50%;
+    display: table-cell;
+}
+.pic_table{
+    vertical-align: middle;
+    display: table-cell;
+    padding-left:3em;
+}
+.pic_table img{
+    vertical-align: middle;
+    display: table-cell; 
+    margin: 0 auto;
+}
+
+
+
+
+@media screen and (max-width: 640px) {
+    .tile {
+        width: 100%;
+        height: 150px;
+    }
+        .jumbotron {
+        display: none;
+    }
+    .gallery{
+            width: 100%;
+            padding: 0px;
+    }
+    .row{
+        width: 100%;
+        margin: 0px;
+        
+    }
+    .transparentback{
+        background:transparent;
+    }
+    .container{
+        width: 100%;
+    }
+    .col-centered{
+    	width: 100%;
+    }
+    .text-small{
+        font-size:0.75rem;
+
+}
+
+.captionOrange, .captionBlack
+        {
+            color: #fff;
+            font-size: 20px;
+            line-height: 30px;
+            text-align: center;
+            border-radius: 4px;
+        }
+        .captionOrange
+        {
+            background: #EB5100;
+            background-color: rgba(235, 81, 0, 0.6);
+        }
+        .captionBlack
+        {
+            font-size:16px;
+            background: #000;
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+        a.captionOrange, A.captionOrange:active, A.captionOrange:visited
+        {
+            color: #ffffff;
+            text-decoration: none;
+        }
+        a.captionOrange:hover
+        {
+            color: #eb5100;
+            text-decoration: underline;
+            background-color: #eeeeee;
+            background-color: rgba(238, 238, 238, 0.7);
+        }
+        .bricon
+        {
+            background: url(../Jssor.Slider.FullPack/img/browser-icons.png);
+        }
