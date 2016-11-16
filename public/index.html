@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="myApp">
 <head>
 	<title>Ashley Vo - home</title>
 	<link rel="shortcut icon" href="./images/icon.ico">
@@ -67,9 +67,6 @@
 	  <!--Probably will put a Resume Page For details on Exp-->
       <ul class = "nav navbar-nav navbar-right">
         <li class = "active"><a href = "#">Home</a></li>
-        <li><a href = "./AboutMe.html">About Me</a></li>
-		<li><a href = "./projects.html">Projects</a></li>
-		<li><a href = "./contact.html">Contact &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
 
 
         <!-- <li class = "dropdown">
@@ -97,7 +94,7 @@
    </div>
    
 </nav>
-
+<div ng-controller="AppCtrl">
 <section class="module parallax parallax-1">
   <div class="container">
   	<div class="introblock">
@@ -162,7 +159,7 @@ What I enjoy doing are playing video games or board games, going on adventures a
     <p class="center">  &copy; Ashley Vo 2016</p>
   </div>
 
-  
+  </div>
 
 </section>
 </body>
