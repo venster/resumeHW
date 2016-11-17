@@ -48,7 +48,7 @@
   </div>
 </nav> -->
 
-<nav class = "navbar navbar-inverse navbar-fixed-top" role = "navigation">
+<!--<nav class = "navbar navbar-inverse navbar-fixed-top" role = "navigation">
    
    <div class = "navbar-header">
       <button type = "button" class = "navbar-toggle" 
@@ -65,7 +65,7 @@
    <div class = "collapse navbar-collapse" id = "example-navbar-collapse">
 	
 	  <!--Probably will put a Resume Page For details on Exp-->
-      <ul class = "nav navbar-nav navbar-right">
+     <!-- <ul class = "nav navbar-nav navbar-right">
         <li class = "active"><a href = "#">Home</a></li>
 
 
@@ -89,11 +89,11 @@
             
          </li>-->
 			
-      </ul>
+      <!--</ul>
 
-   </div>
+   </div> 
    
-</nav>
+</nav>-->
 <div ng-controller="AppCtrl">
 <section class="module parallax parallax-1">
   <div class="container">
@@ -127,8 +127,25 @@ What I enjoy doing are playing video games or board games, going on adventures a
 
 <section class="module content">
   <div class="container">
-    <h2>Lorem Ipsum Dolor</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+    <table class="table">
+      <thead>
+        <tr>
+        <th>School</th>
+        <th>Major</th>
+        <th>Degree</th>
+        <th>Graduation Date</th>
+      </tr>
+      </thead>
+        <tbody>
+        <tr ng-repeat="item in eduList">
+        <td>{{item.name}}</td>
+        <td>{{item.major}}</td>
+        <td>{{item.degree}}</td>
+        <td>{{item.gradYear}}</td>
+
+          </tr>
+      </tbody>
+    </table>
   </div>
 </section>
 
@@ -143,8 +160,50 @@ What I enjoy doing are playing video games or board games, going on adventures a
 
 <section class="module content">
   <div class="container">
-    <h2>Lorem Ipsum Dolor</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+    <table class="table">
+      <thead>
+        <tr>
+        <th>Skill</th>
+        <th class="text-right">Exp. Level (1-10)</th>
+      </tr>
+      </thead>
+        <tbody>
+        <tr ng-repeat="item in skillList">
+        <td>{{item.name}}</td>
+        <td class="text-right">{{item.level}}</td>
+
+          </tr>
+      </tbody>
+    </table>
+  </div>
+</section> 
+
+<section class="module parallax parallax-4">
+  <div class="container">
+    <div class="titleblock">
+        <span class="name">Projects</span>
+    </div>
+  </div>
+</section>
+
+<section class="module content">
+  <div class="container">
+<table class="table">
+      <thead>
+        <tr>
+        <th>Name</th>
+        <th></th>
+        <th>Git Link</th>
+      </tr>
+      </thead>
+        <tbody>
+        <tr ng-repeat="item in projectList">
+        <td>{{item.name}}</td>
+        <td>{{item.des}}</td>
+        <td><a href={{item.git}}><img src="./images/gitIcon.png"></a></td>
+          </tr>
+      </tbody>
+    </table>
   </div>
 </section> 
 
@@ -159,7 +218,11 @@ What I enjoy doing are playing video games or board games, going on adventures a
     <p class="center">  &copy; Ashley Vo 2016</p>
   </div>
 
-  </div>
+
 
 </section>
+</div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+    <script src="/controller.js"></script>
 </body>

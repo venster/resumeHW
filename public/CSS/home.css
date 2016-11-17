@@ -112,6 +112,10 @@ section.module.parallax-3 {
   height: 280px;
   background-image: url("../images/bg4.jpg");
 }
+section.module.parallax-4 {
+  height: 280px;
+  background-image: url("../images/bg5.jpg");
+}
 
 @media all and (min-width: 600px) {
   section.module h2 {
